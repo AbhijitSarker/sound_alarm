@@ -300,7 +300,7 @@ if __name__ == "__main__":
             exit(1)
             
         # Option to calibrate based on ambient noise
-        calibrate = input("Would you like to calibrate based on ambient noise? (y/n): ").lower().strip()
+        calibrate = input("Would you like to calibrate based on the ambient noise? (y/n): ").lower().strip()
         if calibrate == 'y':
             ambient_db = alarm.calculate_ambient_noise(5.0)
             if ambient_db:
